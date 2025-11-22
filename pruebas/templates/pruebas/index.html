@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="es">
   <head>
-    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unitecnar - Página de ejemplo</title>
@@ -13,20 +12,15 @@
       .hero { background:#f5f7fb; padding:30px; border-radius:6px }
       footer { color:#666; text-align:center; margin:40px 0 }
     </style>
-    <link rel="stylesheet" href="{% static 'pruebas/styles.css' %}">
-    <script src="{% static 'pruebas/script.js' %}" defer></script>
   </head>
   <body>
+    <header>
+      <div class="container">
         <h1>Unitecnar</h1>
         <nav>
           <a href="/">Inicio</a>
           <a href="/pruebas/">Pruebas</a>
           <a href="/template/">Template</a>
-        </nav>
-        <div class="controls">
-          <button id="toggle-anim" class="anim-toggle" aria-pressed="false">Pausar animaciones</button>
-        </div>
-        </div>
         </nav>
       </div>
     </header>
@@ -35,10 +29,6 @@
       <section class="hero">
         <h2>Bienvenido a Django desde unitecnar</h2>
         <p>RESUMEN DE EXPOTECNOLOGIA.</p>
-        <!-- Ejemplo de imagen estática: coloca tu imagen en pruebas/static/pruebas/ -->
-        <div style="margin-top:16px">
-          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia" style="max-width:100%;height:auto;border: radius 10px;">
-        </div>
       </section>
 
       <section style="margin-top:20px">
