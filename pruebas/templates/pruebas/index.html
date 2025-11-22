@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Unitecnar - Página de ejemplo</title>
@@ -28,12 +29,20 @@
     <main class="container">
       <section class="hero">
         <h2>Bienvenido a Django desde unitecnar</h2>
-        <p>Esta es una página de ejemplo 'tradicional' con cabecera, navegación, contenido principal y pie de página.</p>
+        <p>RESUMEN DE EXPOTECNOLOGIA.</p>
+        <!-- Ejemplo de imagen estática: coloca tu imagen en pruebas/static/pruebas/ -->
+        <div style="margin-top:16px">
+          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia" style="max-width:100%;height:auto;border-radius:6px;">
+        </div>
       </section>
 
       <section style="margin-top:20px">
         <h3>Secciones</h3>
-        <p>En un proyecto real aquí irían información, enlaces, imágenes y más contenido estructurado.</p>
+        <p>La Expotecnologia es un espacio donde se presentan y analizan temas relacionados con la ética de los ingenieros, la innovación tecnológica, la ciencia y la tecnología . su propósito es mostrar como el conocimiento científico y los avances tecnológicos influyen en la sociedad y deben usarse de forma responsable.
+La ética de los ingenieros establece principios que guían su trabajo , como proteger la vida humana , cuidar el medio ambiente, actuar con honestidad y garantizar que sus proyectos sean seguros y beneficiosos para la comunidad . esto asegura que la tecnología se desarrolle de manera responsable.
+La innovación tecnológica consiste en crear o mejorar herramientas , sistemas y procesos para resolver problemas y facilitar la vida diaria . incluye avances como la inteligencia artificial , la automatización y nuevas soluciones sostenibles.
+La ciencia aporta el conocimiento y la investigación necesario para entender el mundo , mientras que la tecnología aplica ese conocimiento para crear productos y soluciones practicas . ambos se relacionan directamente : sin ciencia no hay tecnología , y sin tecnología no hay innovación .
+</p>
       </section>
     </main>
 
