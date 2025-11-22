@@ -2,10 +2,8 @@ from django.shortcuts import render
 
 
 def pruebas_view(request):
-    """Render the `pruebas/index.html` template so `/pruebas/` shows the same
-    page as the `template` route (index).
-    """
-    return render(request, 'pruebas/index.html')
+    """Render the `pruebas/pruebas.html` template for the /pruebas/ route."""
+    return render(request, 'pruebas/pruebas.html')
 
 
 def template_view(request):
