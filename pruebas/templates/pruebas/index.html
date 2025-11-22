@@ -13,15 +13,16 @@
       .hero { background:#f5f7fb; padding:30px; border-radius:6px }
       footer { color:#666; text-align:center; margin:40px 0 }
     </style>
+    <link rel="stylesheet" href="{% static 'pruebas/styles.css' %}">
   </head>
   <body>
     <header>
       <div class="container">
         <h1>Unitecnar</h1>
         <nav>
-          <a href="/">Inicio</a>
-          <a href="/pruebas/">Pruebas</a>
-          <a href="/template/">Template</a>
+        <div class="hero-image">
+          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia">
+        </div>
         </nav>
       </div>
     </header>
@@ -32,7 +33,7 @@
         <p>RESUMEN DE EXPOTECNOLOGIA.</p>
         <!-- Ejemplo de imagen estática: coloca tu imagen en pruebas/static/pruebas/ -->
         <div style="margin-top:16px">
-          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia" style="max-width:100%;height:auto;border-radius:6px;">
+          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia" style="max-width:100%;height:auto;border: radius 10px;">
         </div>
       </section>
 
