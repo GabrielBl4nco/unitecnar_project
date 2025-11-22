@@ -17,12 +17,15 @@
     <script src="{% static 'pruebas/script.js' %}" defer></script>
   </head>
   <body>
-    <header>
-      <div class="container">
         <h1>Unitecnar</h1>
         <nav>
-        <div class="hero-image">
-          <img src="{% static 'pruebas/expotecnologia.png' %}" alt="Expotecnologia">
+          <a href="/">Inicio</a>
+          <a href="/pruebas/">Pruebas</a>
+          <a href="/template/">Template</a>
+        </nav>
+        <div class="controls">
+          <button id="toggle-anim" class="anim-toggle" aria-pressed="false">Pausar animaciones</button>
+        </div>
         </div>
         </nav>
       </div>

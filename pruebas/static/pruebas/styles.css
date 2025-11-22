@@ -4,6 +4,20 @@
 header { background:#0066cc; color:#fff; padding:20px 10px; }
 header .container { display:flex; align-items:center; justify-content:space-between; }
 nav a { color:#fff; margin-right:12px; text-decoration:none }
+/* Controls */
+.controls { margin-left:12px }
+.anim-toggle {
+	background: #fff;
+	color: #0066cc;
+	border: 1px solid rgba(0,0,0,0.06);
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.anim-toggle[aria-pressed="true"] {
+	background:#e9f2ff;
+}
 
 /* Layout */
 .container { max-width:900px; margin:20px auto; padding:0 12px }
